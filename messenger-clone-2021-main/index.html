@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добро пожаловать в KakaoClone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="status-bar fixed">
+      <div class="status-bar__column">
+        <span>20:43</span>
+        <i class="fas fa-location-arrow fa-xs"></i>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal fa-xs"></i>
+        <i class="fas fa-wifi fa-xs"></i>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Добро пожаловать в KakaoClone</h1>
+      <p class="welcome-header__text">
+        Если у вас есть аккаунт, то войдите с помощью email или номера телефона.
+      </p>
+    </header>
+
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        name="username"
+        type="text"
+        placeholder="Email или номер телефона"
+        required
+      />
+      <input name="password" type="password" placeholder="Пароль" />
+      <button type="submit">Войти</button>
+      <button type="submit">Регистрация</button>
+      <a href="#">Найти аккаунт или восстановить пароль</a>
+    </form>
+    <div id="no-mobile">
+      <span>Ваш экран слишком большой 😥</span>
+    </div>
+  </body>
+</html>
